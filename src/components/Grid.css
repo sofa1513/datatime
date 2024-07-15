@@ -20,6 +20,7 @@ body {
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(7, 1fr);
     gap: 5px;
+    margin: 10px;
   }
   
   .cell {
@@ -67,4 +68,19 @@ body {
   
   .highlight-white.scheme2 {
     color: #0099f7;
+  }
+
+  @media (max-width: 320px) {
+    .container {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .cell {
+      font-size: 1rem; 
+    }
+  
+    body {
+      font-size: 14px; 
+    }
   }
